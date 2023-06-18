@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayerScreen">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:id="@+id/songImage"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:id="@+id/songName"
+        >
+    </TextView>
+
+    <SeekBar
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/seekBar"
+        android:layout_margin="25dp">
+
+    </SeekBar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/pause"
+            android:src="@drawable/baseline_pause_circle_filled_24">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/play"
+            android:src="@drawable/baseline_play_arrow_24">
+        </ImageView>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/stop"
+            android:src="@drawable/baseline_stop_circle_24">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
